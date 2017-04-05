@@ -102,7 +102,6 @@
         cell = [[LeftSlideCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
     }
     
-//    cell.selected = NO;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
     cell.testLb.text = arr[indexPath.row];
@@ -137,9 +136,10 @@
         }];
     };
     
+    
     cell.swipCallBack = ^{
-        for(LeftSlideCell *tmpCell in tableView.visibleCells)
-            [tmpCell closeMenuWithCompletionHandle:nil];
+        __strong typeof(weakSelf)strongSelf = weakSelf;
+        [strongSelf disappearMenuWithTableView:tableView];
     };
     
     return cell;
@@ -147,11 +147,18 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self disappearMenuWithTableView:tableView];
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    return self.timeArr[section];
+}
+
+//收起左滑菜单
+- (void)disappearMenuWithTableView:(UITableView *)tableView {
     for(LeftSlideCell *tmpCell in tableView.visibleCells)
         [tmpCell closeMenuWithCompletionHandle:nil];
 }
-
-
 
 #pragma mark -
 
