@@ -16,8 +16,6 @@
 @property(nonatomic,strong)UIView *containerView;
 /**标记左滑菜单是否打开*/
 @property(nonatomic,assign,readonly)BOOL isOpen;
-/**测试文字*/
-@property(nonatomic,strong)UILabel *testLb;
 
 @end
 
@@ -32,6 +30,20 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+
+
+-(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+{
+    if(self=[super initWithStyle:style reuseIdentifier:reuseIdentifier])
+    {
+        for(UIView *sub in self.contentView.subviews)
+        {
+            [sub removeFromSuperview];
+        }
+        [self setUpView];
+    }
+    return self;
 }
 
 - (void)setUpView {

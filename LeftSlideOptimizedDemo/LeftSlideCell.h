@@ -10,6 +10,8 @@
 
 @interface LeftSlideCell : UITableViewCell
 
+/**测试文字*/
+@property(nonatomic,strong)UILabel *testLb;
 
 /**添加备忘的回调*/
 @property(nonatomic,copy)void (^remarkCallBack)();
@@ -18,4 +20,6 @@
 /***滑动的回调*/
 @property(nonatomic,copy)void (^swipCallBack)();
 
+
+-(void)closeMenuWithCompletionHandle:(void (^)(void))completionHandle;
 @end
