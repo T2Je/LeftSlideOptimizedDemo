@@ -15,6 +15,7 @@
 		E3029EF01E9542500046D14B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3029EEE1E9542500046D14B /* LaunchScreen.storyboard */; };
 		E3029EFB1E9542500046D14B /* LeftSlideOptimizedDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E3029EFA1E9542500046D14B /* LeftSlideOptimizedDemoTests.m */; };
 		E3029F061E9542500046D14B /* LeftSlideOptimizedDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E3029F051E9542500046D14B /* LeftSlideOptimizedDemoUITests.m */; };
+		E3029F151E9542980046D14B /* LeftSlideCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E3029F141E9542980046D14B /* LeftSlideCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		E3029F011E9542500046D14B /* LeftSlideOptimizedDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeftSlideOptimizedDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3029F051E9542500046D14B /* LeftSlideOptimizedDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftSlideOptimizedDemoUITests.m; sourceTree = "<group>"; };
 		E3029F071E9542500046D14B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3029F131E9542980046D14B /* LeftSlideCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftSlideCell.h; sourceTree = "<group>"; };
+		E3029F141E9542980046D14B /* LeftSlideCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftSlideCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				E3029EEE1E9542500046D14B /* LaunchScreen.storyboard */,
 				E3029EF11E9542500046D14B /* Info.plist */,
 				E3029EE01E9542500046D14B /* Supporting Files */,
+				E3029F131E9542980046D14B /* LeftSlideCell.h */,
+				E3029F141E9542980046D14B /* LeftSlideCell.m */,
 			);
 			path = LeftSlideOptimizedDemo;
 			sourceTree = "<group>";
@@ -275,6 +280,7 @@
 			files = (
 				E3029EE81E9542500046D14B /* ViewController.m in Sources */,
 				E3029EE51E9542500046D14B /* AppDelegate.m in Sources */,
+				E3029F151E9542980046D14B /* LeftSlideCell.m in Sources */,
 				E3029EE21E9542500046D14B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

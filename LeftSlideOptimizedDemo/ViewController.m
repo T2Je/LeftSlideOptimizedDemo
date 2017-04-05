@@ -8,7 +8,11 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, strong) UITableView  *tableView;
+@property (nonatomic, strong) NSMutableArray *timeArr;
+@property (nonatomic, strong) NSMutableDictionary *flightsDic;
 
 @end
 
