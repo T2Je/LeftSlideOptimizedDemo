@@ -129,8 +129,9 @@
                 [strongSelf.timeArr removeObject:key];
             }
             
+            [self.tableView reloadData];
             // 接着刷新view
-            [strongSelf.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+//            [strongSelf.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
             NSLog(@"删除航班");
 
         }];

@@ -17,9 +17,9 @@
 @property(nonatomic,copy)void (^remarkCallBack)();
 /**删除的回调*/
 @property(nonatomic,copy)void (^deleteCallBack)();
-/***滑动的回调*/
+/**滑动的回调*/
 @property(nonatomic,copy)void (^swipCallBack)();
 
 
--(void)closeMenuWithCompletionHandle:(void (^)(void))completionHandle;
+- (void)closeMenuWithCompletionHandle:(void (^)(void))completionHandle;
 @end
